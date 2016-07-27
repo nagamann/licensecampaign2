@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="tilte" content="移転手続き案内フォーム｜光キャンペーン.com" />
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+<link href="../css/contact.css" rel="stylesheet" type="text/css" />
+<title>移転手続き案内フォーム｜光キャンペーン.com</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5151580-4', 'auto');
+  ga('send', 'pageview', {'page': '/apply/form', 'title': '入力画面'});
+
+</script>
+</head>
+
+<body>
+<div class="container">
+  <div class="headerArea">
+  	<h1 id="pageTop">移転手続き案内フォーム｜光キャンペーン.com</h1>
+  	<h2><img src="../images/common/top_logo.png" width="306" height="82" alt="フレッツ光キャンペーンサイト" /></h2>
+    <div class="headerAreaRight">
+      <div class="AreaRight_content">
+          <p class="AreaRight_info">お得なインターネットのお引越プランをご案内！<br />
+          <img src="../images/common/tel.png" alt="0120-230-254　10～21時　年中無休" /></p>
+      </div>
+      <!--AreaRight_content-->
+    </div>
+    <!-- headerAreaRight -->
+  </div>
+  <!-- headerArea --> 
+
+  <div class="contentsArea">
+    <div class="contents formContents">
+      <div class="headingBox">
+        <h3>移転手続き案内フォーム</h3>
+        <ul class="stepList">
+          <li>送信完了</li>
+          <li>確認画面</li>
+          <li class="nowPage">入力画面</li>
+        </ul>
+      </div>
+      <!--headingBox-->
+      <div class="hidden">
+        <div class="sslInfo">
+          <p><img src="../images/common/sslSeal.gif" alt="SECURED BY RapidSSL." width="90" height="50" /></p>
+          <p>お客様にご入力頂いた情報は<br />
+            セキュリティで保護されています。<br />
+          安心してご利用ください。</p>
+        </div>
+        <!--sslInfo-->
+        <div class="descriptTxt">
+          <p>下記フォームをご入力いただき「確認画面へ進む」をクリックしてください。お引越先で提供可能なインターネットをお調べして担当者よりご案内のご連絡をさせて頂きます。</p>
+          <div class="cautionTxt">
+            <p>※メールのみでのご案内はできかねますので、あらかじめご了承ください。</p>
+            <p>※フォーム送信のみでは移転手続きは完了いたしませんのでご注意ください。</p>
+            <p class="linkTxt">※新設または転用のお申込の場合は<a href="https://hikari-cpn.com/apply-s/inquiry.php">こちらのフォーム</a>をご利用ください。</p>
+          </div>
+        </div>
+        <!--caitionTxt--></div>
+      <form method="post" name="form" id="form" action="">
+        <table class="formTable">
+          <caption>お引越情報</caption>
+          <tr>
+            <td rowspan="3" class="heading1">お引越前の<br />
+            ご住所</td>
+            <td class="heading1"><label for="bfAddNum">郵便番号</label></td>
+            <td class="inputArea">〒<input type="text" name="bfAddNum" id="bfAddNum" size="15" />　例：1234567　※ハイフン不要</td>
+          </tr>
+          <tr>
+            <td class="heading1"><label for="bfPrefectures">都道府県</label><span class="fontRed1">[必須]</span></td>
+            <td class="inputArea">
+              <select name="bfPrefectures_s" id="bfPrefectures">
+                <option value="">選択してください</option>
+                <option value="北海道">北海道</option>
+                <option value="青森県">青森県</option>
+                <option value="岩手県">岩手県</option>
+                <option value="宮城県">宮城県</option>
+                <option value="秋田県">秋田県</option>
+                <option value="山形県">山形県</option>
+                <option value="福島県">福島県</option>
+                <option value="茨城県">茨城県</option>
+                <option value="栃木県">栃木県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="新潟県">新潟県</option>
+                <option value="富山県">富山県</option>
+                <option value="石川県">石川県</option>
+                <option value="福井県">福井県</option>
+                <option value="山梨県">山梨県</option>
+                <option value="長野県">長野県</option>
+                <option value="岐阜県">岐阜県</option>
+                <option value="静岡県">静岡県</option>
+                <option value="愛知県">愛知県</option>
+                <option value="三重県">三重県</option>
+                <option value="滋賀県">滋賀県</option>
+                <option value="京都府">京都府</option>
+                <option value="大阪府">大阪府</option>
+                <option value="兵庫県">兵庫県</option>
+                <option value="奈良県">奈良県</option>
+                <option value="和歌山県">和歌山県</option>
+                <option value="鳥取県">鳥取県</option>
+                <option value="島根県">島根県</option>
+                <option value="岡山県">岡山県</option>
+                <option value="広島県">広島県</option>
+                <option value="山口県">山口県</option>
+                <option value="徳島県">徳島県</option>
+                <option value="香川県">香川県</option>
+                <option value="愛媛県">愛媛県</option>
+                <option value="高知県">高知県</option>
+                <option value="福岡県">福岡県</option>
+                <option value="佐賀県">佐賀県</option>
+                <option value="長崎県">長崎県</option>
+                <option value="熊本県">熊本県</option>
+                <option value="大分県">大分県</option>
+                <option value="宮崎県">宮崎県</option>
+                <option value="鹿児島県">鹿児島県</option>
+                <option value="沖縄県">沖縄県</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="heading1"><label for="bfAddress">ご住所</label></th>
+            <td class="inputArea"><input type="text" name="bfAddress" id="bfAddress" size="50" /><br />
+            例：○○市○○町１－１－１　○○マンション　101号室<br />
+            ※集合住宅の場合、建物名称をご入力ください。</td>
+          </tr>
+          <tr>
+            <td rowspan="3" class="heading2">お引越先の<br />
+            ご住所</th>
+            <td class="heading2"><label for="atAddNum">郵便番号</label></td>
+            <td class="inputArea">〒<input type="text" name="atAddNum" id="atAddNum" size="15" /></td>
+          </tr>
+          <tr>
+            <td class="heading2"><label for="atPrefectures">都道府県</label><span class="fontRed1">[必須]</span></td>
+            <td class="inputArea">
+              <select name="atPrefectures_s" id="atPrefectures">
+                <option value="">選択してください</option>
+                <option value="北海道">北海道</option>
+                <option value="青森県">青森県</option>
+                <option value="岩手県">岩手県</option>
+                <option value="宮城県">宮城県</option>
+                <option value="秋田県">秋田県</option>
+                <option value="山形県">山形県</option>
+                <option value="福島県">福島県</option>
+                <option value="茨城県">茨城県</option>
+                <option value="栃木県">栃木県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="新潟県">新潟県</option>
+                <option value="富山県">富山県</option>
+                <option value="石川県">石川県</option>
+                <option value="福井県">福井県</option>
+                <option value="山梨県">山梨県</option>
+                <option value="長野県">長野県</option>
+                <option value="岐阜県">岐阜県</option>
+                <option value="静岡県">静岡県</option>
+                <option value="愛知県">愛知県</option>
+                <option value="三重県">三重県</option>
+                <option value="滋賀県">滋賀県</option>
+                <option value="京都府">京都府</option>
+                <option value="大阪府">大阪府</option>
+                <option value="兵庫県">兵庫県</option>
+                <option value="奈良県">奈良県</option>
+                <option value="和歌山県">和歌山県</option>
+                <option value="鳥取県">鳥取県</option>
+                <option value="島根県">島根県</option>
+                <option value="岡山県">岡山県</option>
+                <option value="広島県">広島県</option>
+                <option value="山口県">山口県</option>
+                <option value="徳島県">徳島県</option>
+                <option value="香川県">香川県</option>
+                <option value="愛媛県">愛媛県</option>
+                <option value="高知県">高知県</option>
+                <option value="福岡県">福岡県</option>
+                <option value="佐賀県">佐賀県</option>
+                <option value="長崎県">長崎県</option>
+                <option value="熊本県">熊本県</option>
+                <option value="大分県">大分県</option>
+                <option value="宮崎県">宮崎県</option>
+                <option value="鹿児島県">鹿児島県</option>
+                <option value="沖縄県">沖縄県</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="heading2"><label for="atAddress">ご住所</label><span class="fontRed1">[必須]</span></td>
+            <td class="inputArea"><input type="text" name="atAddress_s" id="atAddress" size="50" /><br />
+            例：○○市○○町１－１－１　○○ハイツ　201号室<br />
+            ※集合住宅の場合、建物名称をご入力ください。</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="heading3"><label for="movTime">お引越予定時期</label></td>
+            <td class="inputArea">
+              <select name="movTime1" id="movTime">
+                <option value="未定">未定</option>
+                <option value="引越し済み">引越済み</option>
+                <option value="1月">1月</option>
+                <option value="2月">2月</option>
+                <option value="3月">3月</option>
+                <option value="4月">4月</option>
+                <option value="5月">5月</option>
+                <option value="6月">6月</option>
+                <option value="7月">7月</option>
+                <option value="8月">8月</option>
+                <option value="9月">9月</option>
+                <option value="10月">10月</option>
+                <option value="11月">11月</option>
+                <option value="12月">12月</option>
+              </select>
+              <select name="movTime2" id="movTime">
+                <option value="">選択してください</option>
+                <option value="上旬">上旬</option>
+                <option value="中旬">中旬</option>
+                <option value="下旬">下旬</option>
+                <option value="1日">1日</option>
+                <option value="2日">2日</option>
+                <option value="3日">3日</option>
+                <option value="4日">4日</option>
+                <option value="5日">5日</option>
+                <option value="6日">6日</option>
+                <option value="7日">7日</option>
+                <option value="8日">8日</option>
+                <option value="9日">9日</option>
+                <option value="10日">10日</option>
+                <option value="11日">11日</option>
+                <option value="12日">12日</option>
+                <option value="13日">13日</option>
+                <option value="14日">14日</option>
+                <option value="15日">15日</option>
+                <option value="16日">16日</option>
+                <option value="17日">17日</option>
+                <option value="18日">18日</option>
+                <option value="19日">19日</option>
+                <option value="20日">20日</option>
+                <option value="21日">21日</option>
+                <option value="22日">22日</option>
+                <option value="23日">23日</option>
+                <option value="24日">24日</option>
+                <option value="25日">25日</option>
+                <option value="26日">26日</option>
+                <option value="27日">27日</option>
+                <option value="28日">28日</option>
+                <option value="29日">29日</option>
+                <option value="30日">30日</option>
+                <option value="31日">31日</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <table class="formTable">
+        <caption>インターネットご利用状況</caption>
+          <tr>
+            <td rowspan="4" class="heading1">お引越前の<br />
+              インターネット</td>
+            <td class="heading1">ネット回線</td>
+            <td class="inputArea">
+              <label><input type="radio" name="netCircuit" value="フレッツ光" />フレッツ光</label>　
+              <label><input type="radio" name="netCircuit" value="auひかり" />auひかり</label>　<br />
+              <label><input type="radio" name="netCircuit" value="光コラボレーション・その他" />光コラボレーション・その他</label>
+              <input type="text" name="netCircuitDtl" size="20" />
+            </td>
+          </tr>
+          <tr>
+            <td class="heading1"><label for="provider">プロバイダ</label></td>
+            <td class="inputArea"><input type="text" name="provider" id="provider" size="35" /></td>
+          </tr>
+          <tr>
+            <td class="heading1">ご利用期間</td>
+            <td class="inputArea">
+              <label><input type="radio" name="usePeriod" value="1年未満" />1年未満</label>　
+              <label><input type="radio" name="usePeriod" value="1～2年" />1～2年</label>　
+              <label><input type="radio" name="usePeriod" value="2年以上" />2年以上</label>　
+              <label><input type="radio" name="usePeriod" value="不明" />不明</label>　
+            </td>
+          </tr>
+          <tr>
+            <td class="heading1">固定電話<br />
+              （ご自宅の<br />
+              お電話）</td>
+            <td class="inputArea">
+              <label><input type="radio" name="homeTel" value="あり" />あり</label>　
+              <label><input type="radio" name="homeTel" value="なし" />なし</label>　
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="heading2"><label for="netChoice">お引越先でご利用希望の<br />
+            インターネット</label></td>
+            <td class="inputArea">
+              <select id="netChoice" name="netChoice">
+                <option value="">選択してください</option>
+                <option value="フレッツ光">フレッツ光</option>
+                <option value="auひかり">auひかり</option>
+                <option value="ソフトバンク光">ソフトバンク光</option>
+                <option value="Marubeni光">Marubeni光</option>
+                <option value="NURO光">NURO光</option>
+                <option value="@TCOMヒカリ">@TCOMヒカリ</option>
+                <option value="@nifty光">@nifty光</option>
+                <option value="So-net光">So-net光</option>
+                <option value="OCN光">OCN光</option>
+                <option value="おすすめの回線">おすすめの回線</option>
+                <option value="その他">その他</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <table class="formTable">
+        <caption>お客様情報</caption>
+          <tr>
+            <td rowspan="2" class="heading3">お名前<span class="fontRed1">[必須]</span></td>
+            <td class="heading3"><label for="name1">漢字</label></td>
+            <td class="inputArea">
+              <input type="text" name="name1_s" id="name1" size="35" /><br />例：引越　一郎</td>
+          </tr>
+          <tr>
+            <td class="heading3"><label for="name2">カナ</label></td>
+            <td class="inputArea"><p>
+              <input type="text" name="name2_s" id="name2" size="35" /><br />例：ヒッコシ　イチロウ</p></td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2" class="heading3"><label for="telNum">携帯電話番号</label><span class="fontRed1">[必須]</span></td>
+            <td class="inputArea"><input type="text" name="telNum_s" id="telNum" size="35" /><br />
+            <span class="fontRed2">※お引越後にもご連絡がとりやすい携帯電話番号を<br />
+            ご入力ください。</span><br />
+            例：09012345678　※ハイフン不要</td>
+          </tr>
+          <tr>
+            <td class="inputArea">
+              ご利用中の携帯キャリア　＊複数選択可<br />
+              <label><input type="checkbox" name="carrierD" value="ドコモ" />ドコモ</label>　
+              <label><input type="checkbox" name="carrierA" value="au" />au</label>　
+              <label><input type="checkbox" name="carrierS" value="ソフトバンク" />ソフトバンク</label>　
+              <label><input type="checkbox" name="carrierE" value="その他" />その他</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="heading3"><label for="mailAdd">メールアドレス</label><span class="fontBlue1">[任意]</span></td>
+            <td class="inputArea"><p>
+              <input type="text" name="email" id="mailAdd" size="50" />
+              <br />
+            ※半角英数にてご入力ください。<span class="fontRed2"><br />
+            受信確認メールを送信します。</span></p></td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="heading3">ご連絡希望時間</td>
+            <td class="heading3"><label for="contactableDay">曜日</label></td>
+            <td class="inputArea">
+              <select name="contactableDay">
+                <option value="いつでも">いつでも</option>
+                <option value="平日">平日</option>
+                <option value="土日祝日">土日祝日</option>
+                <option value="月曜">月曜</option>
+                <option value="火曜">火曜</option>
+                <option value="水曜">水曜</option>
+                <option value="木曜">木曜</option>
+                <option value="金曜">金曜</option>
+                <option value="土曜">土曜</option>
+                <option value="日曜">日曜</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="heading3"><label for="contactableTime">時間帯</label></td>
+            <td class="inputArea">
+              <select name="contactableTime">
+                <option value="いつでも（10～21時）">いつでも（10～21時）</option>
+                <option value="午前中">午前中</option>
+                <option value="12～13時">12～13時</option>
+                <option value="13～15時">13～15時</option>
+                <option value="15～17時">15～17時</option>
+                <option value="17～19時">17～19時</option>
+                <option value="19～21時">19～21時</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="heading3"><label for="freeTxt">その他ご質問など</label></td>
+            <td class="inputArea">ご要望事項や、わからない事などお気軽にご記入ください。<br />
+            専門スタッフがお電話にてお答えします。<br />
+            <textarea rows="4" cols="50" name="freeTxt" id="freeTxt"></textarea></td>
+          </tr>
+        </table>
+        <table class="formTable formTableCnp">
+          <caption>
+            当サイト限定キャンペーンで、さらにお得にお引越！
+          </caption>
+          <tr>
+            <td class="heading4"><img src="../images/form/img_form_01.png" alt="新居に1台ウォーターサーバー" width="246" height="133" class="cnpImg" /></td>
+            <td class="inputArea"><label for="canpaign"><span class="fontOrange">●安全！安心！新居にウォーターサーバー！</span></label><br />
+            引越先の飲み水の問題を一発解決！サーバーレンタル料無料。お水代だけのご負担で導入できます。お料理や、赤ちゃんのミルク用をはじめ、災害時の備蓄水としても人気です！<br />
+            <p class="alignCenter"><input type="checkbox" name="canpaign" id="canpaign" value="案内を希望する" /><span class="fontSize">案内を希望する</span></p></td>
+          </tr>
+        </table>
+        <input type="hidden" name="mailToNum" id="mailToNum" value="3" />
+		<input type="hidden" name="mode" id="mode" value="CONFIRM" />
+        <p class="alignCenter"><input type="image" src="../images/form/btn_submit.png" alt="確認画面へ進む" /></p>
+      </form>
+      <p class="copy">COPYRIGHT &copy; <?php echo date("Y");?> Shin Nihon Energy Co, Ltd. All Rights Reserved.</p>
+    </div>
+    <!--contents formContents-->
+  </div>
+  <!--contentsArea-->
+</div>
+<!--container-->
+
+</body>
+</html>

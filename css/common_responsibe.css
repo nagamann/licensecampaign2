@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (min-width: 1201px){
+	.entry a {
+		right:25%;
+		}
+}
+@media screen and (max-width: 1200px){
+	.visual-content{
+		width:75%;
+	}
+	div.key-visual > div.main {
+		position: relative;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.count {
+		display:block;
+		width:100%;
+		position:relative;
+		right:0;
+		bottom:0;
+		padding:10px;
+		box-sizing:border-box;
+
+	}
+.count-rest, .count-right{
+		padding:0px 5%;
+	}
+	.entry a {
+		width:100%;
+		position:relative;
+		margin:10px 0 0;
+		bottom:0;
+
+	}
+	.visualcopy {
+    padding-bottom: 20px;
+}
+	}
+@media screen and (max-width: 980px){
+section.contact > div.body > form > dl > dd > span{
+	display:block;
+	}
+}
+@media screen and (max-width: 889px){
+.campaign .body-content img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 416px){
+.visualcopy {
+    padding-top: 50px;
+}
+header {
+	height: 45px;
+}
+.entry a {
+    
+    height: 45px;
+    line-height: 45px;
+    font-size: 17px;
+}
+}

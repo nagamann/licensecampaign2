@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Language" content="ja" />
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<title>原付免許取得支援キャンペーン | 東京オートバイ協同組合</title>
+<meta name="description" content="原付免許取得支援キャンペーン 期間中にWebエントリー後、原付免許を取得し、AJ東京加盟店にて原付車両を購入すると先着50名様へ免許取得費用8000円の支援金をお支払いたします。">
+<meta name="keywords" content="原付免許,50㏄,原付免許取得,キャンペーン,実質0円,新車バイク,レンタルバイク,都内,東京,ETC,オートバイ組合">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial|Roboto:700">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/common_responsibe.css">
+<title>原付免許取得支援キャンペーン | 東京オートバイ協同組合</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37288911-23', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview', {'page': '/licensecampaign/confirm', 'title': '確認画面'});
+
+</script>
+</head>
+
+<body>
+<header id="header">
+	<h1><a href="http://www.aj-tokyo.or.jp/"><img src="images/header/logo.png" alt="東京オートバイ協同組合"></a></h1>	
+</header>
+<section class="contact" id="contact">
+  <h2>エントリーフォーム</h2>
+  <div class="body">
+   <form method="post" name="form" id="form" action="<?=$sfm_script?>">
+      <dl class="confirm form">
+        <dt>お名前<span class="required">必須</span></dt>
+        <dd>
+          <p><?php echo FORM_DATA_H('name')?></p>
+        </dd>
+        <dt>ふりがな<span class="required">必須</span></dt>
+        <dd>
+          <p><?php echo FORM_DATA_H('kana')?></p>
+        </dd>
+        <dt>メールアドレス<span class="required">必須</span><span class="notice red">※モバイルのメールアドレスをご登録の場合、各キャリアの受信設定手順に従い、受信設定を確認して受信可能な状態にしてください。<br>
+          ※ドメイン指定受信設定は、「aj-tokyo.or.jp」を許可する設定にしてください。</span></dt>
+        <dd>
+        	 <p><?php echo FORM_DATA_H('email')?></p>
+        </dd>
+        <dt>生年月日<span class="required">必須</span></dt>
+        <dd>
+        	<p><?php echo FORM_DATA_H('year')?>年<?php echo FORM_DATA_H('month')?>月<?php echo FORM_DATA_H('day')?>日</p>         
+        </dd>
+        <dt>郵便番号<span class="required">必須</span><span class="notice">※半角数字でご入力ください　例）1640012</span></dt>
+        <dd>
+        	  <p><?php echo FORM_DATA_H('zip')?></p>          
+        </dd>
+        <dt>住所<span class="required">必須</span><span class="notice">例）東京都中野区本町6-22-11　NICORA102号</span></dt>
+        <dd>
+        	  <p><?php echo FORM_DATA_H('address')?></p>
+        </dd>
+        <dt>連絡先TEL<span class="required">必須</span><span class="notice">例）03-3384-9882</span></dt>
+        <dd>
+        	  <p><?php echo FORM_DATA_H('tel')?></p>
+        </dd>
+        <dt>未成年者の親の同意について<span class="required">必須</span></dt>
+        <dd>
+        	<p><?php echo FORM_DATA_H('trigger')?></p>          
+        </dd>
+        <dt>確認事項<span class="required">必須</span></dt>
+        <dd>
+        	<p><?php echo FORM_DATA_H('agree')?></p>
+          </dd>
+      </dl>
+              <?php
+//入力項目エラー判定
+
+if($_SESSION['SFM']['InputErr']){
+	echo'<p class="submit"><input type="button" value="戻る" alt="前の画面に戻る" onclick="history.back()" /></p>';
+}else{
+	echo'<p class="accept">入力内容をご確認のうえ、送信ボタンを押してください。</p>
+        <p class="submit"><input type="button" value="戻る" alt="前の画面に戻る" onclick="history.back()" />
+        <input type="hidden" name="autoReply" id="autoReply" value="1" />
+        <input type="hidden" name="mode" id="mode" value="SEND" />
+        <input type="submit" value=" 送 信 "></p>';     
+}
+?>
+      </form>
+  </div>
+</section>
+<p class="headerlink"><a href="#header" id="pagetoplink">ページトップへ</a></p>
+<div class="system">
+  <h3>システムに関するお問い合わせ窓口</h3>
+  <p><span class="line">株式会社アーティストユニオン</span><br>
+<a href="mailto:licensecampaign@artistunion.com">licensecampaign@artist-union.com</a></p>
+</div>
+<footer>
+  <h3>キャンペーン運営事務局</h3>
+  <p class="footer-content"><span class="line">東京オートバイ協同組合</span></p>
+  <address>
+  東京都中野区本町6-22-11　NICORA102号
+  </address>
+  <p class="copyright">Copyright 2016 &copy; Tokyo Autobike Cooperative Society All Right reserved.</p>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

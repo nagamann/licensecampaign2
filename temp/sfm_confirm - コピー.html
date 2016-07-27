@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="tilte" content="移転手続き案内フォーム｜光キャンペーン.com" />
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+<link href="../css/contact.css" rel="stylesheet" type="text/css" />
+<title>移転手続き案内フォーム｜光キャンペーン.com</title>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="headerArea">
+  	<h1 id="pageTop">移転手続き案内フォーム｜光キャンペーン.com</h1>
+  	<h2><img src="../images/common/top_logo.png" width="306" height="82" alt="フレッツ光キャンペーンサイト" /></h2>
+    <div class="headerAreaRight">
+      <div class="AreaRight_content">
+          <p class="AreaRight_info">お得なインターネットのお引越プランをご案内！<br />
+          <img src="../images/common/tel.png" alt="0120-230-254　10～21時　年中無休" /></p>
+      </div>
+      <!--AreaRight_content-->
+    </div>
+    <!-- headerAreaRight -->
+  </div>
+  <!-- headerArea --> 
+
+  <div class="contentsArea">
+    <div class="contents formContents">
+      <div class="headingBox">
+        <h3>移転手続き案内フォーム</h3>
+        <ul class="stepList">
+          <li>送信完了</li>
+          <li class="nowPage">確認画面</li>
+          <li>入力画面</li>
+        </ul>
+      </div>
+      <!--headingBox-->
+      <p>入力した内容をご確認ください。<br />
+        必須項目で未入力の項目がある場合は「戻る」ボタンを押して、入力画面に戻り、<br />
+        再度、ご入力ください。</p>
+      <form method="post" name="form" id="form" action="<?=$sfm_script?>">
+        <table class="formTable" cellspacing="1">
+          <caption>お引越情報</caption>
+          <tr>
+            <td rowspan="3" class="heading1">お引越前の<br />
+            ご住所</td>
+            <td class="heading1">郵便番号</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('bfAddNum')?></td>
+          </tr>
+          <tr>
+            <td class="heading1">都道府県<span class="fontRed1">[必須]</span></td>
+            <td class="inputArea"><?php echo FORM_DATA_H('bfPrefectures')?></td>
+          </tr>
+          <tr>
+            <td class="heading1">ご住所</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('bfAddress')?></td>
+          </tr>
+          <tr>
+            <td rowspan="3" class="heading2">お引越先の<br />
+            ご住所</td>
+            <td class="heading2">郵便番号</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('atAddNum')?></td>
+          </tr>
+          <tr>
+            <td class="heading2">都道府県<span class="fontRed1">[必須]</span></td>
+            <td class="inputArea"><?php echo FORM_DATA_H('atPrefectures')?></td>
+          </tr>
+          <tr>
+            <td class="heading2">ご住所<span class="fontRed1">[必須]</span></td>
+            <td class="inputArea"><?php echo FORM_DATA_H('atAddress')?></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="heading3">お引越予定時期</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('movTime1')?> <?php echo FORM_DATA_H('movTime2')?></td>
+          </tr>
+        </table>
+        <table class="formTable" cellspacing="1">
+          <caption>
+          インターネットご利用状況
+          </caption>
+          <tr>
+            <td rowspan="4" class="heading1">お引越前の<br />
+              インターネット</td>
+            <td class="heading1">ネット回線</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('netCircuit')?>　<?php echo FORM_DATA_H('netCircuitDtl')?></td>
+          </tr>
+          <tr>
+            <td class="heading1">プロバイダ</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('provider')?></td>
+          </tr>
+          <tr>
+            <td class="heading1">ご利用期間</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('usePeriod')?></td>
+          </tr>
+          <tr>
+            <td class="heading1">固定電話<br />
+              （ご自宅の<br />
+              お電話）</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('homeTel')?></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="heading2">お引越先でご利用希望の<br />
+              インターネット</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('netChoice')?></td>
+          </tr>
+        </table>
+        <table class="formTable" cellspacing="1">
+          <caption>
+          お客様情報
+          </caption>
+          <tr>
+            <td rowspan="2" class="heading3">お名前<span class="fontRed1">[必須]</span></td>
+            <td class="heading3">漢字</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('name1')?></td>
+          </tr>
+          <tr>
+            <td class="heading3">カナ</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('name2')?></td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2" class="heading3">携帯電話番号<span class="fontRed1">[必須]</span></td>
+            <td class="inputArea"><?php echo FORM_DATA_H('telNum')?></td>
+          </tr>
+          <tr>
+            <td class="inputArea"><?php echo FORM_DATA_H('carrierD'), '　'?><?php echo FORM_DATA_H('carrierA'), '　'?><?php echo FORM_DATA_H('carrierS'), '　'?><?php echo FORM_DATA_H('carrierE')?></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="heading3">メールアドレス<span class="fontBlue1">[任意]</span></td>
+            <td class="inputArea"><?php echo FORM_DATA_H('email')?></td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="heading3">ご連絡希望時間</td>
+            <td class="heading3">曜日</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('contactableDay')?></td>
+          </tr>
+          <tr>
+            <td class="heading3">時間帯</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('contactableTime')?></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="heading3">その他ご質問など</td>
+            <td class="inputArea"><?php echo FORM_DATA_H('freeTxt')?></td>
+          </tr>
+        </table>
+        <table class="formTable formTableCnp">
+          <caption>
+            当サイト限定キャンペーンで、さらにお得にお引越し！
+          </caption>
+          <tr>
+            <td class="heading4"><p>安全！安心！新居にウォーターサーバー！</p></td>
+            <td class="inputArea"><?php echo FORM_DATA_H('canpaign')?></td>
+          </tr>
+        </table>
+        <?php
+//入力項目エラー判定
+//if($_SESSION['SFM']['InputErr']){
+	//echo'<input type="image" src="../images/contact/contact_fotter_back.png" alt="前の画面に戻る" onclick="history.back()" />';
+if($_SESSION['SFM']['InputErr']){
+	echo'<p class="alignCenter"><a href="javascript:history.back()"><img src="../images/form/btn_submit_back.png" alt="前の画面に戻る" /></p>';
+}else{
+	echo'<p class="alignCenter">入力が正しければ、送信ボタンを押して下さい。</p>
+        <p class="alignCenter"><a href="javascript:history.back()"><img src="../images/form/btn_submit_back.png" alt="前の画面に戻る" /></a>
+        <input type="hidden" name="autoReply" id="autoReply" value="1" />
+        <input type="hidden" name="mode" id="mode" value="SEND" />
+        <input type="image" src="../images/form/btn_submit_send.png" alt="送信する" /></p>';
+}
+?>
+      </form>
+      <p class="copy">COPYRIGHT &copy; <?php echo date("Y");?> Shin Nihon Energy Co, Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
